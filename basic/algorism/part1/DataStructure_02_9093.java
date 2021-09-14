@@ -17,14 +17,18 @@ public class DataStructure_02_9093 {
 		StringBuilder sb = new StringBuilder();
 		for(int k=1; k<=n; k++) {
 			str = br.readLine();
-			
+			str += " ";
 			for(int i=0; i<str.length(); i++) {
-				stack.push(str.charAt(i));
-			}
-			
-			for(int i=0; i<str.length(); i++) {
-				sb.append(stack.pop());
-			}
+				char a = str.charAt(i);
+				if(a == ' ') {
+					while(!stack.empty()) {
+						sb.append(stack.pop());
+					}
+					sb.append(" ");
+				} else {					
+					stack.push(str.charAt(i));
+				}
+			}			
 			sb.append("\n");
 		}
 		
