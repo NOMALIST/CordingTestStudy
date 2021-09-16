@@ -13,7 +13,7 @@ public class Queue_02_2164 {
 		int n = Integer.parseInt(br.readLine());
 		
 		LinkedList<Integer> que = new LinkedList<Integer>();
-		
+
 		for(int i=n; i>=1; i--) {
 			que.push(i);
 		}
