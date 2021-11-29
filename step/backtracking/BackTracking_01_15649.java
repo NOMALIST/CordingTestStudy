@@ -26,6 +26,7 @@ public class BackTracking_01_15649 {
 		br.close();
 	}
 	
+	// N은 입력된 N, selectN은 선택한 갯수, K는 최대 선택 갯수
 	public static void selecte(int N, int selectN, int K) {
 		if(K == selectN) {
 			for(int i=0; i<K; i++) {
@@ -45,4 +46,5 @@ public class BackTracking_01_15649 {
 			}
 		}
 	}
+	
 }
