@@ -20,6 +20,7 @@ public class Problem2 {
 			System.out.println(answer[i]);
 		}
 		
+		
 	    return answer;
 	}
 	
