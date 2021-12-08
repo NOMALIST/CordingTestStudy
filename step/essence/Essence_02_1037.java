@@ -22,6 +22,7 @@ public class Essence_02_1037 {
 		
 		Collections.sort(numbers);
 		
+		
 		System.out.println(numbers.get(0) * numbers.get(numbers.size()-1));
 		br.close();
 	}
